@@ -49,7 +49,7 @@ else:  # pragma: nocover
 # This is basically <name>=<value> where <value> can be an unquoted token,
 # an empty quoted string, or a quoted string where the ending quote is *not*
 # preceded by a backslash.
-_AUTH_PARAM_RE = r'([a-zA-Z0-9_\-]+)=(([a-zA-Z0-9_\-]+)|("")|(".*[^\\]"))'
+_AUTH_PARAM_RE = r'([a-zA-Z0-9_\-]+)=(([a-zA-Z0-9_\-\.]+)|("")|(".*[^\\]"))'
 _AUTH_PARAM_RE = re.compile(r"^\s*" + _AUTH_PARAM_RE + r"\s*$")
 
 # Regular expression matching an unescaped quote character.
